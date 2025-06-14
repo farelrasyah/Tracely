@@ -1,0 +1,27 @@
+{
+  "name": "tracely-chrome-extension",
+  "version": "1.0.0",
+  "description": "Track your daily browsing activity and get insightful summaries",
+  "main": "background.js",
+  "scripts": {
+    "zip": "powershell Compress-Archive -Path .\\* -DestinationPath .\\tracely-extension.zip -Force",
+    "clean": "powershell Remove-Item .\\tracely-extension.zip -ErrorAction SilentlyContinue"
+  },
+  "keywords": [
+    "chrome-extension",
+    "browsing-tracker",
+    "time-tracking",
+    "productivity",
+    "manifest-v3"
+  ],
+  "author": "Farel Rasyah",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/tracely-extension.git"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

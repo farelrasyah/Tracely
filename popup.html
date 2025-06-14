@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracely - Browsing Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo">
+        <h1>🕒 Tracely</h1>
+        <p class="subtitle">Daily Browsing Tracker</p>
+      </div>
+      <div class="date" id="currentDate"></div>
+    </div>
+
+    <!-- Stats Overview -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">🌐</div>
+        <div class="stat-content">
+          <div class="stat-number" id="totalSites">0</div>
+          <div class="stat-label">Sites Visited</div>
+        </div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-icon">⏰</div>
+        <div class="stat-content">
+          <div class="stat-number" id="totalTime">0h 0m</div>
+          <div class="stat-label">Active Time</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top Sites -->
+    <div class="section">
+      <h3 class="section-title">🔥 Most Visited Sites</h3>
+      <div id="topSites" class="top-sites">
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Time Spent -->
+    <div class="section">
+      <h3 class="section-title">⏳ Time Spent</h3>
+      <div id="timeSpent" class="time-spent">
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Hourly Activity Chart -->
+    <div class="section">
+      <h3 class="section-title">📊 Hourly Activity</h3>
+      <div class="chart-container">
+        <canvas id="hourlyChart" width="300" height="150"></canvas>
+      </div>
+    </div>
+
+    <!-- History -->
+    <div class="section">
+      <h3 class="section-title">📅 7-Day History</h3>
+      <div id="historyList" class="history-list">
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <button id="clearData" class="clear-btn">Clear Today's Data</button>
+      <div class="version">v1.0.0</div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
