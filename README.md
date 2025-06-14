@@ -194,7 +194,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 👨‍💻 Author
 
 **Farel Rasyah**
-- GitHub: [@username](https://github.com/farelrasyah)
+- GitHub:https://github.com/farelrasyah
 - Email: farelrasyah87@gmail.com
 
 ## 🎯 Roadmap
